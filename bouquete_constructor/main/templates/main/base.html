@@ -44,8 +44,8 @@
     <header class="header">
             <div class="h_panel_1">
                 <nav class="navigation_1">
-                    <a class="nav_header_link" href="/" data-scroll="#">Главная</a>
-                    <a class="nav_header_link" href="/about" data-scroll="#">О нас</a>
+                    <a class="nav_header_link" href="{% url 'home' %}" data-scroll="#">Главная</a>
+                    <a class="nav_header_link" href="{% url 'about' %}" data-scroll="#">О нас</a>
                     <a class="nav_header_link" href="/payments" data-scroll="#">Оплата</a>
                     <a class="nav_header_link" href="/contacts" data-scroll="#">Контакты</a>
                     <a class="nav_header_link" href="/help" data-scroll="#">Помощь</a>
