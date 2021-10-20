@@ -1,10 +1,13 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <!-- Для адаптивной верстки-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
     <!-- Imbue font: for main title -->
     <!-- font-family: 'Imbue', serif; -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -70,7 +73,7 @@
 -->
     </header>
     <div class="indent_2">
-        <img src="materials/pictures/header_2.jpg">
+        <img src="{% static 'main/pictures/header_2.jpg' %}">
     </div>
     <main class="general_main">
         <div class="container">
@@ -120,14 +123,14 @@
                     </div>
                     <div class="info_c">
                         <div class="number">
-                            <div class="phone"><img src="materials/icons/icon_telephone.png" width="25px" height="25px"></div>
+                            <div class="phone"><img src="{% static 'main/icons/icon_telephone.png' %}" width="25px" height="25px"></div>
                             <div>
                                 <div class="num_1_p">+380(950)999000</div>
                                 <div class="num_1_p">+380(950)777000 Горячая линия</div>
                             </div>
                         </div>
                         <div class="adress">
-                            <div class="point"><img src="materials/icons/icon_point.png" width="30px" height="30px"></div>
+                            <div class="point"><img src="{% static 'main/icons/icon_point.png' %}" width="30px" height="30px"></div>
                             <div>Storm str. Ai Mari - 47</div>
                         </div>
                     </div>
