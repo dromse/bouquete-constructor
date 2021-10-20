@@ -6,6 +6,7 @@ body {
     line-height: 1.5;
     color: black;
 }
+
 .container {
     width: 100%;
     max-width: 1230px;
@@ -16,6 +17,7 @@ body {
 .header {
 
 }
+
 /*HEADER*/
 .h_panel_1 {
     display: flex;
@@ -25,29 +27,34 @@ body {
 
     background-color: #5c5c5c;
 }
+
 .navigation {
     padding: 5px 0;
     font-size: 17px;
     line-height: 1.5;
     color: black;
 }
+
 .navigation_1 {
     padding: 5px 0;
     font-size: 17px;
     line-height: 1.5;
     color: black;
 }
+
 .navigation_2 {
     padding: 5px 0;
     font-size: 17px;
     line-height: 1.5;
     color: black;
 }
+
 .nav_header_link {
     padding: 0 10px;
     text-decoration: none;
     color: whitesmoke;
 }
+
 .h_panel_2 {
     display: flex;
     padding: 15px 0;
@@ -59,6 +66,7 @@ body {
     -webkit-background-size: cover;
     background-size: cover;
 }
+
 .main_name {
     font-size: 70px;
     font-family: 'Tangerine', cursive;
@@ -86,10 +94,12 @@ body {
 .general_main {
     padding: 350px 0;
 }
+
 .m_header {
 
 
 }
+
 .m_main {
 
 }
