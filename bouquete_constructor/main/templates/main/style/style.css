@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: 'Imbue', serif;
+
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+}
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header {
+
+}
+/*HEADER*/
+.h_panel_1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    background-color: #5c5c5c;
+}
+.navigation {
+    padding: 5px 0;
+    font-size: 17px;
+    line-height: 1.5;
+    color: black;
+}
+.navigation_1 {
+    padding: 5px 0;
+    font-size: 17px;
+    line-height: 1.5;
+    color: black;
+}
+.navigation_2 {
+    padding: 5px 0;
+    font-size: 17px;
+    line-height: 1.5;
+    color: black;
+}
+.nav_header_link {
+    padding: 0 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.h_panel_2 {
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background:  url("../materials/images/background_red.jpg")
+    center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.main_name {
+    font-size: 70px;
+    font-family: 'Tangerine', cursive;
+    color: gold;
+}
+
+.h_panel_3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    background-color: #bb1414;
+}
+
+.indent_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    padding: 0px 0 ;
+}
+
+.general_main {
+    padding: 350px 0;
+}
+.m_header {
+
+
+}
+.m_main {
+
+}
+
+/*FOOTER*/
+.general_footer {
+    width: 100%;
+    height: 27vh;
+    background:  url("../materials/images/background_red.jpg")
+    center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.cont_header {
+
+}
+
+.cont_title {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.cont_title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin: 1px auto 0;
+
+    background-color: whitesmoke;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.log_w {
+    font-size: 70px;
+    font-family: 'Tangerine', cursive;
+    color: gold;
+}
+
+.info_c {
+    display: flex;
+    align-items: flex-end;
+    font-size: 19px;
+}
+
+.number {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 10px;
+}
+
+.phone {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 5px;
+}
+.num_1_p {
+    color: whitesmoke;
+}
+
+.adress {
+    display: flex;
+    align-items: flex-end;
+    color: whitesmoke;
+}
+
+.point {
+    display: flex;
+    align-items: flex-end;
+}
+
