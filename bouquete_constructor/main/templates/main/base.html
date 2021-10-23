@@ -46,14 +46,14 @@
                 <nav class="navigation_1">
                     <a class="nav_header_link" href="{% url 'home' %}" data-scroll="#">Главная</a>
                     <a class="nav_header_link" href="{% url 'about' %}" data-scroll="#">О нас</a>
-                    <a class="nav_header_link" href="/payments" data-scroll="#">Оплата</a>
-                    <a class="nav_header_link" href="/contacts" data-scroll="#">Контакты</a>
-                    <a class="nav_header_link" href="/help" data-scroll="#">Помощь</a>
+                    <a class="nav_header_link" href="{% url 'payments' %}" data-scroll="#">Оплата</a>
+                    <a class="nav_header_link" href="{% url 'contacts' %}" data-scroll="#">Контакты</a>
+                    <a class="nav_header_link" href="{% url 'help' %}" data-scroll="#">Помощь</a>
                 </nav>
                 <nav class="navigation_1">
-                    <a class="nav_header_link" href="/status" data-scroll="#">Статус заказа</a>
-                    <a class="nav_header_link" href="/cart" data-scroll="#">Корзина</a>
-                    <a class="nav_header_link" href="/login" data-scroll="#">Войти</a>
+                    <a class="nav_header_link" href="{% url 'status' %}" data-scroll="#">Статус заказа</a>
+                    <a class="nav_header_link" href="{% url 'cart' %}" data-scroll="#">Корзина</a>
+                    <a class="nav_header_link" href="{% url 'login' %}" data-scroll="#">Войти</a>
                 </nav>
             </div>
             <div class="h_panel_2">
