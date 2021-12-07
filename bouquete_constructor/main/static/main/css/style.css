@@ -20,10 +20,6 @@ body {
     margin: 0 auto;
 }
 
-.header {
-
-}
-
 /*HEADER*/
 .h_panel_1 {
     display: flex;
@@ -99,15 +95,6 @@ body {
 
 .general_main {
     padding: 350px 0;
-}
-
-.m_header {
-
-
-}
-
-.m_main {
-
 }
 
 /* LOG IN*/
@@ -224,9 +211,6 @@ body {
     background-size: cover;
 }
 
-.cont_header {
-
-}
 
 .cont_title {
     font-family: 'Caveat', cursive;
