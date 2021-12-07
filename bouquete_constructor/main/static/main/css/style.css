@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Imbue', serif;
@@ -102,6 +108,110 @@ body {
 
 .m_main {
 
+}
+
+/* LOG IN*/
+.wrapper {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+}
+.open-popup {
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+}
+.popup__bg.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 400px;
+    padding: 25px;
+    transition: 0.5s all;
+}
+.popup.active {
+    transform: translate(-50%, -50%);
+    transition: 0.5s all;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.popup label {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.popup .label__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 5px;
+}
+.popup input {
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.popup input:focus {
+    border-bottom: 1px solid blue;
+}
+.popup input:focus + .label__text {
+    color: blue;
+}
+.popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    border: 2px solid blue;
+    background: blue;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+.popup button:hover {
+    background: white;
+    color: blue;
+    transition: 0.5s all;
+}
+.submit {
+    background-color: white;
+    cursor: pointer;
 }
 
 /*FOOTER*/
@@ -267,4 +377,38 @@ body {
     opacity: 1;
 }
 
+/*SLIDER*/
+.main_slider {
+    border: 2px solid violet;
+}
+.m_slider {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.slider {
+    border: 2px solid black;
+    max-width: 50%;
+    margin: 20px 10px;
+    overflow: hidden;
+}
+.slider-line {
+    display: flex;
+    transition: all ease 1s;
+}
+.main_button {
+    display: flex;
+}
+.slider-prev {
+    left: 0;
+    outline: none;
+    border: none;
+    background: white;
+}
+.slider-next {
+    left: 0;
+    outline: none;
+    border: none;
+    background: white;
+}
 
