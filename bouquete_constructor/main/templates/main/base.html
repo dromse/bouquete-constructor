@@ -2,11 +2,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <!-- Для адаптивной верстки-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}?{% now "U" %}">
     <link rel="shortcut icon" href="{% static 'main/icons/favicon.ico' %}" />
     <!-- Imbue font: for main title -->
     <!-- font-family: 'Imbue', serif; -->
@@ -36,78 +38,61 @@
     <!-- font-family: 'Tangerine', cursive; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
-    <!--  -->
-    <!-- -->
+     <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
     <title>{% block title %}{% endblock %}</title>
 </head>
+
+
 <body>
+
     <header class="header">
             <div class="h_panel_1">
                 <nav class="navigation_1">
-                    <a class="nav_header_link" href="{% url 'home' %}" data-scroll="#">Главная</a>
-                    <a class="nav_header_link" href="{% url 'about' %}" data-scroll="#">О нас</a>
-                    <a class="nav_header_link" href="{% url 'payments' %}" data-scroll="#">Оплата</a>
-                    <a class="nav_header_link" href="{% url 'contacts' %}" data-scroll="#">Контакты</a>
-                    <a class="nav_header_link" href="{% url 'help' %}" data-scroll="#">Помощь</a>
+                    <a class="nav_header_link lng-aUs" href="{% url 'about' %}" data-scroll="#">О нас</a>
+                    <a class="nav_header_link lng-paid" href="{% url 'payments' %}" data-scroll="#">Оплата</a>
+                    <a class="nav_header_link lng-contacts" href="{% url 'contacts' %}" data-scroll="#">Контакты</a>
+                    <a class="nav_header_link lng-help" href="{% url 'help' %}" data-scroll="#">Помощь</a>
                 </nav>
                 <nav class="wrapper">
-                    <a class="nav_header_link" href="{% url 'cart' %}" data-scroll="#">Статус заказа</a>
-                    <a class="nav_header_link" href="{% url 'cart' %}" data-scroll="#">Карзина</a>
-                    <a class="open-popup" href="{% url 'login' %}" data-scroll="#">Войти</a>
+                    <select class="change-lang">
+                        <option value="en">EN</option>
+                        <option value="ru" selected>RU</option>
+                        <option value="ua">UA</option>
+                    </select>
+                    <a class="nav_header_link lng-status" href="{% url 'cart' %}" data-scroll="#">Статус заказа</a>
+                    <a class="nav_header_link lng-cart" href="{% url 'cart' %}" data-scroll="#">Корзина <span class="badge badge-pill badge-danger">0</span></a>
+                    <a class="open-popup lng-logIn" href="{% url 'login' %}" data-scroll="#">Войти</a>
                 </nav>
             </div>
             <div class="h_panel_2">
                 <div class="main_name" href="#">Secrets de Fleur's</div>
                 <nav class="navigation">
-                    <a class="nav_header_link" href="#" data-scroll="#">Мероприятия</a>
-                    <a class="nav_header_link" href="#" data-scroll="#">Идеи для Букетов</a>
-                    <a class="nav_header_link" href="#" data-scroll="#">Цветы</a>
+                    <a class="nav_header_link lng-ideasForBouquets" href="{% url 'home' %}" data-scroll="#">Констурктор Букетов</a>
+                    <a class="nav_header_link lng-flowers" href="{% url 'flowers' %}" data-scroll="#">Цветы</a>
                 </nav>
             </div>
-        <!--
-            <div class="h_panel_3">
-                <nav class="navigation">
-
-                </nav>
-            </div>
--->
     </header>
+
     <div class="indent_2">
         <img src="{% static 'main/pictures/header_2.jpg' %}">
     </div>
+
     <main class="general_main">
         <div class="container">
             {% block content %}{% endblock %}
         </div>
     </main>
+
     <div class="bridge">
         <div class="container">
 
         </div>
     </div>
 
-    <div class="main_slider">
-        <div class="container">
-            <div class="m_slider">
-                <div class="main_button">
-                    <button class="button slider-prev"><img src="{% static 'main/icons/arrow_l.png' %}" width="90" height="90" alt=""></button>
-                </div>
-                <div class="slider">
-                    <div class="slider-line">
-                        <img src="{% static 'main/pictures/110.jpg' %}" alt="">
-                        <img src="{% static 'main/pictures/111.jpg' %}" alt="">
-                        <img src="{% static 'main/pictures/112.jpg' %}" alt="">
-                        <img src="{% static 'main/pictures/113.jpg' %}" alt="">
-                        <img src="{% static 'main/pictures/114.jpg' %}" alt="">
-                    </div>
-                </div>
-                <div class="main_button">
-                    <button class="button slider-next"><img src="{% static 'main/icons/arrow_r.png' %}" width="90" height="90" alt=""></button>
-                </div>
-            </div>
-        <script src="{% static 'main/js/script.js' %}"></script>
-        </div>
-    </div>
     
     <footer class="general_footer">
         <div class="container">
@@ -122,12 +107,12 @@
                             <div class="phone"><img src="{% static 'main/icons/icon_telephone.png' %}" width="25px" height="25px"></div>
                             <div>
                                 <div class="num_1_p">+380(950)999000</div>
-                                <div class="num_1_p">+380(950)777000 Горячая линия</div>
+                                <div class="num_1_p lng-hotline">+380(950)777000 Горячая линия</div>
                             </div>
                         </div>
                         <div class="adress">
                             <div class="point"><img src="{% static 'main/icons/icon_point.png' %}" width="30px" height="30px"></div>
-                            <div>Storm str. Ai Mari - 47</div>
+                            <div class="lng-address">Storm str. Ai Mari - 47</div>
                         </div>
                     </div>
                 </div>
@@ -151,6 +136,11 @@
 
     </div>
 
+    <script src="{% static 'main/js/lang.js' %}"></script>
     <script src="{% static 'main/js/form.js' %}"></script>
+    <script src="{% static 'main/js/app.js' %}"></script>
+    <script src="{% static 'main/js/vase_logic.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

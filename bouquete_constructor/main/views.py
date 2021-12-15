@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from django.views.generic import View
+from django.http import HttpResponseRedirect
+
+from .models import (Flower, Cart, Customer)
 
 
 def index(request):
@@ -35,3 +39,31 @@ def status(request):
 
 def login(request):
     return render(request, 'main/help.html')
+
+
+def constructor(request):
+    return render(request, 'main/constructor.html')
+
+
+def flowers(request):
+    flowers_list = Flower.objects.all()
+    return render(request, 'main/flowers.html', {'flowers': flowers_list})
+
+
+class CartView(View):
+    def get(self, request, *args, **kwargs):
+        customer = Customer.objects.get(user=request.user)
+        cart = Cart.objects.get(owner=customer)
+
+        context = {
+            'cart': cart,
+        }
+
+        return render(request, 'main/cart.html', context)
+
+
+class AddToCartView(View):
+
+    def get(self, request, *args, **kwargs):
+        
+        return HttpResponseRedirect('/cart/')
