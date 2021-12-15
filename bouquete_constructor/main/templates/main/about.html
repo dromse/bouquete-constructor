@@ -1,0 +1,51 @@
+
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+О нас
+{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div id="link_about" class="section_about">
+            <h3 class="section_suptitle">The description of</h3>
+            <h2 class="section_title">Secrets De Fleur's</h2>
+            <div class="section_text">
+                <p>
+                    The Restaurant "International" is a cultural institution for dates, business meetings, family dinners, lavish celebrations.
+
+                    The restaurant has a European style of the early 20th century. The prevailing dark colors of the interior, oak wood furniture. It also includes the main attributes of that time - this is a small stage in the hall with a piano, which can convey the desired atmosphere. Bar counter near the kitchen, second floor and smoking room.
+
+                    The restaurant can offer an extensive menu of hot dishes, light salads and Western-style desserts.
+
+                    The bar counter has a large and varied selection of alcohol, from wine to spirits. The bar has a professional staff member with samilie and kavist skills.</p>
+            </div>
+            <h4 class="section_downtitle">Join us!</h4>
+            <div class="section_icons">
+                <a class="social_item" href="https://www.instagram.com/evgenii_ponasenkov/?hl=ru" target="_blank">
+                    <div class="sec_ic_inst">
+                    <img src="{% static 'main/pictures/icon_instagram.png' %}">
+                    </div>
+                </a>
+                <a class="social_item" href="https://www.youtube.com/watch?v=9HIsxihffIk&list=PLT5nuwIezKe-uHb6FlI1armSznMq6xQiy&index=2" target="_blank">
+                    <div class="sec_ic_yutb">
+                    <img src="{% static 'main/pictures/icon_youtube.png' %}">
+                    </div>
+                </a>
+                <a class="social_item" href="https://www.facebook.com/gordonramsay/" target="_blank">
+                    <div class="sec_ic_fcbk">
+                    <img src="{% static 'main/pictures/icon_facebook.png' %}">
+                    </div>
+                </a>
+                <a class="social_item" href="https://www.pinterest.com/pin/842665780273591585/" target="_blank">
+                    <div class="sec_ic_pint">
+                    <img src="{% static 'main/pictures/icon_pinterest.png' %}">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
