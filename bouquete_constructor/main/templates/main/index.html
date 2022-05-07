@@ -1,0 +1,229 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+<header class="m_header">
+    <div>
+        ПОИСК
+    </div>
+    <div>
+        КОНСТРУКТОР БУКЕТОВ
+    </div>
+</header>
+<main class="general_main">
+    <div class="container">
+        <div class="main_m">
+            <div class="main_1">
+                <form class="centerText" onsubmit="addItem(this,event);">
+                    <input type="text" class="f_class" name="name" value="Красная Роза">
+                    <input type="submit" class="addBtn" value="Add item">
+                </form>
+                <form class="centerText" onsubmit="addItem(this,event);">
+                    <input type="text" class="f_class" name="name" value="Белая Роза">
+                    <input type="submit" class="addBtn" value="Add item">
+                </form>
+                <form class="centerText" onsubmit="addItem(this,event);">
+                    <input type="text" class="f_class" name="name" value="Хоризантема Розовая">
+                    <input type="submit" class="addBtn" value="Add item">
+                </form>
+                <form class="centerText" onsubmit="addItem(this,event);">
+                    <input type="text" class="f_class" name="name" value="Синяя Орхидея">
+                    <input type="submit" class="addBtn" value="Add item">
+                </form>
+                <form class="centerText" onsubmit="addItem(this,event);">
+                    <input type="text" class="f_class" name="name" value="Розовая Гарбера">
+                    <input type="submit" class="addBtn" value="Add item">
+                </form>
+                <form class="centerText" onsubmit="addItem(this,event);">
+                    <input type="text" class="f_class" name="name" value="Желтая Лилия">
+                    <input type="submit" class="addBtn" value="Add item">
+                </form>
+                <form class="centerText" onsubmit="addItem(this,event);">
+                    <input type="text" class="f_class" name="name" value="Хоризантема Красная">
+                    <input type="submit" class="addBtn" value="Add item">
+                </form>
+                <form class="centerText" onsubmit="addItem(this,event);">
+                    <input type="text" class="f_class" name="name" value="Красная орхидея">
+                    <input type="submit" class="addBtn" value="Add item">
+                </form>
+                <div id="list" class="centerText hidden">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Item Description</td>
+                                <td id="cellspaced">Action</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <button class="b_m_f" id="id_b_delete">Delete</button>
+                </div>
+            </div>
+            <div class="main_2">
+                <div class="vase_m_f">
+                    <div class="vase_f v_f_1">
+                        <div>1</div>
+                        <div class="v_f_1_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_2">
+                        <div>2</div>
+                        <div class="v_f_2_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_3">
+                        <div>3</div>
+                        <div class="v_f_3_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_4">
+                        <div>4</div>
+                        <div class="v_f_4_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_5">
+                        <div>5</div>
+                        <div class="v_f_5_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_6">
+                        <div>6</div>
+                        <div class="v_f_6_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_7">
+                        <div>7</div>
+                        <div class="v_f_7_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_8">
+                        <div>8</div>
+                        <div class="v_f_8_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_9">
+                        <div>9</div>
+                        <div class="v_f_9_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_10">
+                        <div>10</div>
+                        <div class="v_f_10_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_11">
+                        <div>11</div>
+                        <div class="v_f_11_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_12">
+                        <div>12</div>
+                        <div class="v_f_12_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_13">
+                        <div>13</div>
+                        <div class="v_f_13_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_14">
+                        <div>14</div>
+                        <div class="v_f_14_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_15">
+                        <div>15</div>
+                        <div class="v_f_15_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_16">
+                        <div>16</div>
+                        <div class="v_f_16_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_17">
+                        <div>17</div>
+                        <div class="v_f_17_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_18">
+                        <div>18</div>
+                        <div class="v_f_18_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_19">
+                        <div>19</div>
+                        <div class="v_f_19_add">
+
+                        </div>
+                    </div>
+                    <div class="vase_f v_f_20">
+                        <div>20</div>
+                        <div class="v_f_20_add">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="vase_m">
+                    <img src="{% static 'main/images/vase.png' %}" width="250px" height="300px" alt="">
+                </div>
+            </div>
+        </div>
+        <!--
+<header class="m_header">
+            <div>
+                ПОИСК
+            </div>
+            <div>
+                КОНСТРУКТОР БУКЕТОВ
+            </div>
+        </header>
+        <main class="m_main">
+            <div>
+                <div>
+                    Выбор цветов и зелени
+                </div>
+                <div>
+                    Итог
+                </div>
+            </div>
+            <div>
+                <div>
+                    ЦВЕТЫ
+                </div>
+                <div>
+                    ГОРШОК
+                </div>
+            </div>
+            <div>
+                Далее
+            </div>
+        -->
+</main>
+{% endblock %}

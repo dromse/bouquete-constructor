@@ -1,0 +1,50 @@
+
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+О нас
+{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div id="link_about" class="section_about">
+            <h3 class="section_suptitle">The description of</h3>
+            <h2 class="section_title">Secrets De Fleur's</h2>
+            <div class="section_text">
+                <p>
+                    The Bouquet Constructor web application is designed to create a bouquet from any number of a wide range of offered flowers. 
+                    If there is a mistake in choosing the composition of the bouquet or you just want to make changes, 
+                    then it is possible to remove any of the flowers and choose a new one instead. 
+                    In the basket you can see the price and composition of the bouquet. 
+                    When ordering a bouquet, a notification is sent to the email you specified. 
+                </p>
+            </div>
+            <h4 class="section_downtitle">Join us!</h4>
+            <div class="section_icons">
+                <a class="social_item" href="https://www.instagram.com/evgenii_ponasenkov/?hl=ru" target="_blank">
+                    <div class="sec_ic_inst">
+                    <img src="{% static 'main/pictures/icon_instagram.png' %}">
+                    </div>
+                </a>
+                <a class="social_item" href="https://www.youtube.com/watch?v=9HIsxihffIk&list=PLT5nuwIezKe-uHb6FlI1armSznMq6xQiy&index=2" target="_blank">
+                    <div class="sec_ic_yutb">
+                    <img src="{% static 'main/pictures/icon_youtube.png' %}">
+                    </div>
+                </a>
+                <a class="social_item" href="https://www.facebook.com/gordonramsay/" target="_blank">
+                    <div class="sec_ic_fcbk">
+                    <img src="{% static 'main/pictures/icon_facebook.png' %}">
+                    </div>
+                </a>
+                <a class="social_item" href="https://www.pinterest.com/pin/842665780273591585/" target="_blank">
+                    <div class="sec_ic_pint">
+                    <img src="{% static 'main/pictures/icon_pinterest.png' %}">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
